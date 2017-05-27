@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+         body {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        
+        fieldset {
+            display: inline-block;
+            border: solid 2px lightgray;
+            height: 250px;
+            width: 600px;
+            background-color: ghostwhite;
+            margin-bottom: 10px;
+        }
+        
+        div {
+            display: inline-block;
+            height: 200px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        
+        #label {
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        #label label{
+            display: block;
+			height: 15px;
+			line-height: 30px;
+        }
+
+        #input {
+            width: 300px;
+            padding-top: 11px;
+            padding-left: 20px;
+            line-height: 2em;
+        }
+        
+        button {
+            padding: 7px 14px;
+            background-color: skyblue;
+            border: solid blue 1px;
+            border-radius: 10px;
+            margin-left: 530px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend> Form thingy</legend>
+        <form action="">
+            <div id="label">
+                <label for="name">Name:</label>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <label for="phone">Phone:</label>
+                <br>
+                <label for="address">Address:</label>
+                <br>
+                <label for="payment">Payment options:</label>
+                <br>
+                <label for="planet">Planet:</label>
+            </div>
+
+            <div id="input">
+                <input type="text" placeholder="enter name here">
+                <br>
+                <input type="email" placeholder="enter email here">
+                <br>
+                <input type="tel" placeholder="enter phone number here">
+                <br>
+                <input type="text" placeholder="enter address here">
+                <br>
+                <input type="radio" name="payment">
+                <label for="payment_type">visa</label>
+                <input type="radio" name="payment">
+                <label for="payment_type">master card</label>
+                <input type="radio" name="payment">
+                <label for="payment_type">paypal</label>
+                <input type="radio" name="payment">
+                <label for="payment_type">your soul</label>
+                <br>
+                <select name="" id="">
+                    <option value="Earth">Earth</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Mars">Mars</option>
+                </select>
+            </div>
+            <br>
+
+        </form>
+    </fieldset>
+    <br>
+    <textarea name="comments" id="comments" cols="83" rows="10" placeholder="enter your nightmare here"></textarea>
+    <br>
+    <button>submit</button>
+</body>
+
+</html>

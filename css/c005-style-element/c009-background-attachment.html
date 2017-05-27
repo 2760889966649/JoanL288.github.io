@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        body{
+            height: 2000px;
+        }
+        
+        .container{
+            width: 600px;
+            height: 300px;
+            
+            background-image:url(../../img/meme_welcome.png);
+            
+            background-repeat: no-repeat;
+            
+            border: solid 1px gray;
+            overflow: auto;
+        }
+        
+        .expand{
+            height: 400px;
+        }
+        
+        #scroll{
+            background-attachment: scroll;
+            
+         }
+        #local{
+            background-attachment: local;
+        }
+        
+        #fixed{
+            background-attachment: fixed;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h2>scroll: background-image scroll along the container </h2>
+    <div id="scroll" class="container">
+        <div class="expand"></div>
+    </div>
+    
+    <h2>local: background-img scrolls along the local content</h2>
+    <div id="local" class="container">
+        <div class="expand"></div>
+    </div>
+    
+    <h2>fixed: background-img </h2>
+    <div id="fixed" class="container">
+        <div class="expand"></div>
+    </div>
+</body>
+</html>

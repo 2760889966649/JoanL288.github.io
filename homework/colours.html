@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 120px;
+            height: 20px;
+        }
+        
+        .gray .rgb {
+            background-color: rgb(220, 220, 220);
+        }
+        
+        .gray .hex {
+            background-color: #dcdcdc;
+        }
+        
+        .gray .hsl {
+            background-color: hsl(0, 0%, 86%)
+        }
+        
+        .gray .name {
+            background-color: gainsboro;
+        }
+        
+        .blue {
+            background-color: rgb(0, 206, 209);
+            background-color: #00ced1;
+            background-color: hsl(181, 100%, 41%);
+            background-color: darkturquoise
+        }
+    </style>
+
+</head>
+
+<body>
+    <table border>
+        <tr>
+            <th>hex</th>
+            <th>rgb</th>
+            <th>name</th>
+            <th>hsl</th>
+        </tr>
+
+        <tr class="gray">
+            <td>
+                <div class="hex">#dcdcdc</div>
+            </td>
+            <td>
+                <div class="rgb">(220,220,220)</div>
+            </td>
+            <td>
+                <div class="name">gainsboro</div>
+            </td>
+            <td>
+                <div class="hsl">(175,40%59%)</div>
+            </td>
+        </tr>
+        <tr class="blue">
+            <td>
+                <div class="hex">#00cced1</div>
+            </td>
+            <td>
+                <div class="rgb">(0,206,209)</div>
+            </td>
+            <td>
+                <div class="name">darkturquoise</div>
+            </td>
+            <td>
+                <div class="hsl">(181,100%,41%)</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class=""></div>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input {
+            width: 150px;
+        }
+        
+        input#uploadfile {
+            width: 300px
+        }
+        #radiogroup input{
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" placeholder="enter your name">
+       
+         <br>
+        <input type="password" placeholder="enter your password">
+        
+        <br>
+        <input type="hidden" value="you can't see me">
+        <input min="1" max="100" type="number" placeholder="number">
+        
+        <br>
+        <input type="email" placeholder="email">
+        
+        <br>
+        <input type="url" placeholder="url">
+        
+        <br>
+        <input type="submit">
+        
+        <br>
+        <input type="tel" placeholder="telephone #">
+        
+        <br>
+        <input type="color">
+
+        <br>
+        <input min="1" max="20" value="1" type="range" oninput="updateRange(this.value)" onchange='updateRange(this.value)'>
+        <label id="num_people" for="">1</label>
+        <br>
+        <input id="uploadfile" type="file">
+        <br>
+        <div id="raidogroup">
+        </div>
+        <input type="radio">burger
+        <input type="radio">pizza
+        <input type="radio">sandwhich
+        <br>
+        <input type="checkbox">checkbox
+    </form>
+
+    <script>
+        function updateRange(val) {
+
+            var num_people = document.getElementById('num_people');
+            num_people.innerHTML = val;
+        }
+    </script>
+
+</body>
+
+</html>

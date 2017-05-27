@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+       
+        #container{
+            width: 400px;
+            height: 400px;
+            background-color: deepskyblue;
+            
+            position: relative
+        }
+        
+        .item{
+            width: 200px;
+            height: 200px;
+            
+            font-size: 4em;
+            text-align: right;
+        }
+        
+        #item1{
+            background-color: lightcyan;
+            position: absolute;
+            
+            z-index: 2;
+        }
+        
+        #item2{
+            background-color: aquamarine;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div id="container">
+        <div id="item1" class="item">1</div>
+        <div id="item2" class="item">2</div>
+    </div>
+    
+</body>
+</html>
