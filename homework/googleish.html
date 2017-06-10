@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            width: 100%;
+            text-align: center;
+        }
+        .logo{
+            padding-top: 100px;
+        }
+        img{
+            width: 75%;
+            height: 275px;
+        }
+        
+        .subtext{
+            display: inline-block;
+            
+            z-index: 99;
+            
+            position: relative;
+            bottom: 76px;
+            left: 205px;
+            
+            font-family: arial;
+            font-size: 20px;
+            letter-spacing: 2px;
+            
+            color: #4285f4;
+        }
+        
+        .header{
+            display: inline-block;
+            
+            height: 15px;
+            width: 120px;
+            position: absolute;
+            top: 18px;
+            right: 120px;
+            
+            word-spacing: 5px;
+        }
+        
+         .header a{
+            text-decoration: none;
+            font-family: arial;
+            color: black;
+        }
+        
+          #apps{
+            position: fixed;
+            top: 15px;
+            right: 90px;
+              
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-image:url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+            
+            background-repeat: no-repeat;
+            
+            background-position: -135px -40px;
+        }
+        
+        #signin{
+            background-color: royalblue;
+            border: none;
+            
+            height: 30px;
+            width: 70px;
+            border-radius: 3px;
+            
+            position: fixed;
+            top: 12px;
+            right: 10px;
+            
+            font-weight: bold;
+            color: white;
+        }
+          
+        input{
+            width: 400px;
+            height: 30px;
+        }
+       
+        .buttons{
+            margin-bottom: 60px;
+            padding-top: 10px;
+        }
+        .search{
+            border: none;
+            height: 30px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            
+            font-weight: bold;
+            color: darkgray;
+        }
+        
+        #voice{
+            display: inline-block;
+            height: 29px;
+            width: 29px;
+            
+            position: relative;
+            bottom: 27px;
+            left: 180px;
+        
+            background-image: url(../img/voice.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        #francis{
+            text-decoration: none;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+          <img class="google-logo"src="http://i.kinja-img.com/gawker-media/image/upload/s--pEKSmwzm--/c_scale,fl_progressive,q_80,w_800/1414228815325188681.jpg">
+        </div>
+        
+        <div class="subtext">Canada</div>
+       
+       <div class="header">
+           <a href="" id="gmail">Gmail</a>
+           <a href="" id="images">Images</a>
+       </div>
+        
+        <a href="apps" id="apps"></a>
+        
+        <button id="signin">Sign in</button>
+        
+        <div class="search">
+           <form action="">
+            <input type="text" style="search" placeholder="Search Google or type URL">
+            </form>
+        </div>
+        
+        <a href="" id="voice"></a>
+        
+        <div class="buttons">
+            <button class="search">Google Search</button>
+            <button class="search">I'm feeling Lucky</button>
+        </div>
+        
+    <p>Google.ca offered in:
+    <a href="" id="francis">francis</a>
+    </p>
+    
+    <div class="footer">
+        <div id="left">
+           <a href="">Advertising</a>
+            <a href="">Business</a>
+            <a href="">About</a>
+        </div>
+         
+        <div id="right">
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+            <a href="">Setting</a>
+            <a href="">Use Google.com</a>
+        </div>
+    </div>
+     
+    </div>
+    
+</body>
+</html>
